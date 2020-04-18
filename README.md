@@ -15,7 +15,11 @@ json-server --watch db.json
 ```
 ## Вход в ToDoList
 login: admin    
-password: admin
+password: admin  
+Либо:  
+login: lennon    
+password: lenon  
+
 
 ### Особенности входа
 Как и в любом приложении с авторизацией здесь есть вывод ошибок  

@@ -11,7 +11,7 @@ npm run serve
 ```
 
 ### Вход в ToDoList
-login: admin
+login: admin    
 password: admin
 
 

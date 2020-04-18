@@ -9,7 +9,10 @@ npm install
 ```
 npm run serve
 ```
-
+### Запуск json-server
+```
+json-server --watch db.json
+```
 ## Вход в ToDoList
 login: admin    
 password: admin

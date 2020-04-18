@@ -50,15 +50,22 @@ export default {
         font-size: 12px;
         line-height: 14px;
         padding: 15px 33px 15px 33px;
+        &:hover {
+            outline: 1px solid #6A63FF;
+        }
+        &:active {
+            outline: 1px solid #6A63FF;
+            background: #E1DFFF;
+        }
     }
     .todo-header {
         box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+        background-color: #FFFFFF;
     }
     #nickname {
         font-family: Roboto;
         font-weight: normal;
         font-size: 20px;
         line-height: 23px;
-
     }
 </style>

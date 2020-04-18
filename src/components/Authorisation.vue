@@ -183,6 +183,12 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
+    &:hover {
+        background: #F06061;
+    }
+    &:active {
+        background: #D47070;
+    }
 }
 .errors-messages {
     color: #DB2322;
@@ -219,6 +225,7 @@ input {
         box-shadow: none !important;
     }
 }
+
 .invalid {
     border-color: red !important;
 }

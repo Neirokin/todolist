@@ -1,5 +1,5 @@
 <template>
-        <b-col cols="6" class="subtask-container">
+        <b-col cols="5" class="subtask-container">
             <b-row>
                 <b-col>
                     <input type="checkbox">

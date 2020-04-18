@@ -8,7 +8,7 @@
       </b-container>
       
       <b-container>
-          <b-row>
+          <b-row align-h="between" class="todolist-body">
             <task-container></task-container>
             <subtask-container></subtask-container>
           </b-row>
@@ -28,7 +28,7 @@ import TaskContainer from './components/TaskContainer/TaskContainer'
 import SubtaskContainer from './components/SubtaskContainer/SubtaskContainer'
 import TodoHeader from './components/TodoHeader'
 import Authorisation from './components/Authorisation'
-import {mapActions, mapGetters} from 'vuex'
+import {mapGetters} from 'vuex'
 
 
 export default {
@@ -52,10 +52,24 @@ export default {
       'AUTHORISATED'
     ])
   },
+  watch: {
+    AUTHORISATED() {
+        this.changeBgColor();
+    }
+  },
+  mounted: function() {
+    this.changeBgColor();
+  },
   methods: {
-    ...mapActions([
-      'GET_USERS_FROM_DB'
-    ]),
+    changeBgColor() {
+      let body = document.querySelector('body');
+      if(this.AUTHORISATED){
+        body.classList.add('bg-gray');
+      }
+      else {
+        body.classList.remove('bg-gray');
+      }
+    }
   }
 }
 </script>
@@ -68,5 +82,10 @@ export default {
 #authorisation {
   margin-top: 121px;
 }
-
+.bg-gray{
+  background-color: #E5E5E5 !important;
+}
+.todolist-body{
+  margin-top: 1.3125rem;
+}
 </style>
